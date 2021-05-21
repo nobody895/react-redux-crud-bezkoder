@@ -15,7 +15,7 @@ const TutorialsList = () => {
   const tutorials = useSelector(state => state.tutorials);
   const dispatch = useDispatch();
 
-// eslint-disable-next-line
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     dispatch(retrieveTutorials());
   }, []);
