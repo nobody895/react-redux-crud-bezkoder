@@ -15,8 +15,8 @@ const TutorialsList = () => {
   const tutorials = useSelector(state => state.tutorials);
   const dispatch = useDispatch();
 
-  useEffect(() => {
 // eslint-disable-next-line
+  useEffect(() => {
     dispatch(retrieveTutorials());
   }, []);
 
